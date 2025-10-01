@@ -1,0 +1,2 @@
+C:\Users\caio.svieira2\source\repos\CinemaTI22M\CinemaTI22M\obj\Debug\CinemaTI22M.csproj.AssemblyReference.cache
+C:\Users\caio.svieira2\source\repos\CinemaTI22M\CinemaTI22M\obj\Debug\CinemaTI22M.csproj.CoreCompileInputs.cache
