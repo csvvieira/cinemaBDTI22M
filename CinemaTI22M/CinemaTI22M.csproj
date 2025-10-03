@@ -103,6 +103,13 @@
     <Compile Include="ControlPromocao.cs" />
     <Compile Include="ControlSala.cs" />
     <Compile Include="ControlSessao.cs" />
+    <Compile Include="DAOCliente.cs" />
+    <Compile Include="DAOFidelidade.cs" />
+    <Compile Include="DAOFilme.cs" />
+    <Compile Include="DAOIngresso.cs" />
+    <Compile Include="DAOPromocao.cs" />
+    <Compile Include="DAOSala.cs" />
+    <Compile Include="DAOSessao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -10,6 +10,8 @@ namespace CinemaTI22M
     {
         static void Main(string[] args)
         {
+            ControlMenu menuPrincipal = new ControlMenu();
+            menuPrincipal.ExecutarMenuPrincipal();
         }//Fim do método
     }//Fim da classe
 }//Fim do projeto

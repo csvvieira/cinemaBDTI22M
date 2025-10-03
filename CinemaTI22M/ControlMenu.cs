@@ -20,13 +20,7 @@ namespace CinemaTI22M
 
         public ControlMenu()
         {
-            controleFilme = new ControlFilme();
-            controleSala = new ControlSala();
-            controleSessao = new ControlSessao();
-            controleFidelidade = new ControlFidelidade();
-            controleCliente = new ControlCliente();
-            controlePromocao = new ControlPromocao();
-            controleIngresso = new ControlIngresso();
+            
         }//Fim do construtor
 
         //Métodos GETs e SETs
@@ -153,7 +147,7 @@ namespace CinemaTI22M
                         break;
                     case 5:
                         Console.WriteLine("\nExcluir Filme");
-                        this.controleFilme.ExcluirFilme():
+                        this.controleFilme.ExcluirFilme();
                         break;
                     default:
                         Console.WriteLine("Opcão Inválida!!!");
@@ -190,15 +184,15 @@ namespace CinemaTI22M
                         break;
                     case 3:
                         Console.WriteLine("\nConsultar Sala por Código");
-                        this.controleSala.ConsultarPorCodigoSala();
-                        brak;
+                        this.controleSala.ConsultaPorCodigoSala();
+                        break;
                     case 4:
                         Console.WriteLine("\nAtualizar Sala");
                         this.controleSala.AtualizarSala();
                         break;
                     case 5:
                         Console.WriteLine("\nExcluir Sala");
-                        this.controleSala.ExcluirSala():
+                        this.controleSala.ExcluirSala();
                         break;
                     default:
                         Console.WriteLine("Opcão Inválida!!!");
@@ -238,7 +232,7 @@ namespace CinemaTI22M
                         break;
                     case 3:
                         Console.WriteLine("\nConsultar Sessão por Código");
-                        this.controleSessao.ConsultarPorCodigoSessao();
+                        this.controleSessao.ConsultaPorCodigoSessao();
                         break;
                     case 4:
                         Console.WriteLine("\nAtualizar Sessão");
@@ -246,7 +240,7 @@ namespace CinemaTI22M
                         break;
                     case 5:
                         Console.WriteLine("\nExcluir Sessão");
-                        this.controleSessao.ExcluirSessao():
+                        this.controleSessao.ExcluirSessao();
                         break;
                     default:
                         Console.WriteLine("Opcão Inválida!!!");
@@ -283,7 +277,7 @@ namespace CinemaTI22M
                         break;
                     case 3:
                         Console.WriteLine("\nConsultar Fidelidade por Código");
-                        this.controleFidelidade.ConsultarPorCodigoFidelidade();
+                        this.controleFidelidade.ConsultaPorCodigoFidelidade();
                         break;
                     case 4:
                         Console.WriteLine("\nAtualizar Fidelidade");
@@ -291,7 +285,7 @@ namespace CinemaTI22M
                         break;
                     case 5:
                         Console.WriteLine("\nExcluir Fidelidade");
-                        this.controleFidelidade.ExcluirFidelidade():
+                        this.controleFidelidade.ExcluirFidelidade();
                         break;
                     default:
                         Console.WriteLine("Opcão Inválida!!!");
@@ -340,7 +334,7 @@ namespace CinemaTI22M
                         break;
                     case 3:
                         Console.WriteLine("\nConsultar Cliente por Código");
-                        this.controleCliente.ConsultarPorCodigoCliente();
+                        this.controleCliente.ConsultaPorCodigoCliente();
                         break;
                     case 4:
                         Console.WriteLine("\nAtualizar Cliente");
@@ -348,7 +342,7 @@ namespace CinemaTI22M
                         break;
                     case 5:
                         Console.WriteLine("\nExcluir Cliente");
-                        this.controleCliente.ExcluirCliente():
+                        this.controleCliente.ExcluirCliente();
                         break;
                     default:
                         Console.WriteLine("Opcão Inválida!!!");
@@ -385,15 +379,15 @@ namespace CinemaTI22M
                         break;
                     case 3:
                         Console.WriteLine("\nConsultar Promoção por Código");
-                        this.controlePromocao.ConsultarPorCodigoPromocao();
+                        this.controlePromocao.ConsultaPorCodigoPromocao();
                         break;
                     case 4:
                         Console.WriteLine("\nAtualizar Promoção");
-                        this.controlePromocao.AtualizarPromocao():
+                        this.controlePromocao.AtualizarPromocao();
                         break;
                     case 5:
                         Console.WriteLine("\nExcluir Promoção");
-                        this.controlePromocao.ExcluirPromocao():
+                        this.controlePromocao.ExcluirPromocao();
                         break;
                     default:
                         Console.WriteLine("Opcão Inválida!!!");
@@ -442,14 +436,15 @@ namespace CinemaTI22M
                         break;
                     case 3:
                         Console.WriteLine("\nConsultar Ingresso por Código");
-                        this.controleIngresso.ConsultarPorCodigoIngresso();
+                        this.controleIngresso.ConsultaPorCodigoIngresso();
+                        break;
                     case 4:
                         Console.WriteLine("\nAtualizar Ingresso");
                         this.controleIngresso.AtualizarIngresso();
                         break;
                     case 5:
                         Console.WriteLine("\nExcluir Ingresso");
-                        this.controleIngresso.ExcluirIngresso():
+                        this.controleIngresso.ExcluirIngresso();
                  break;
                     default:
                         Console.WriteLine("Opcão Inválida!!!");

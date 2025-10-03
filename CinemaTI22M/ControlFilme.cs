@@ -20,7 +20,6 @@ namespace CinemaTI22M
         {
             this.dao = new DAOFilme();
             Console.WriteLine(this.dao.ConsultarTudoFilme());
-            Console.WriteLine(this.dao.ConsultarTudoFilme());
         }//Fim do método
 
         public void ConsultaPorCodigoFilme()
@@ -54,12 +53,23 @@ namespace CinemaTI22M
                     int codigo1 = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Informe o novo gênero: ");
                     string genero = Console.ReadLine();
-                    Console.WriteLine(this.dao.AtualizarFilme(codigo1, "titulo", genero));
+                    Console.WriteLine(this.dao.AtualizarFilme(codigo1, "genero", genero));
                     break;
                 default:
                     Console.WriteLine("Impossível atualizar, algo deu errado!!!");
                     break;
             }//Fim do switch
+        }//Fim do método
+
+        public void ExcluirFilme()
+        {
+            this.dao = new DAOFilme();
+
+            Console.WriteLine("Informe o código que deseja excluir: ");
+            int codigo = Convert.ToInt32(Console.ReadLine());
+
+            //Chama o método para excluir
+            Console.WriteLine(this.dao.DeletarFilme(codigo));
         }//Fim do método
     }//Fim da classe
 }//Fim do projeto

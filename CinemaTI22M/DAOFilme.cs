@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.Design;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data;
@@ -50,10 +48,10 @@ namespace CinemaTI22M
             }
             catch (Exception erro)
             {
-                    Console.WriteLine($"Algo deu erradi!\n\n {erro}");
+                Console.WriteLine($"Algo deu errado!\n\n {erro}");
             }//Fim do try_catch
         }//Fim do método
-        
+
         public void PreencherVetorFilme()
         {
             string query = "select * from filme";
@@ -61,7 +59,7 @@ namespace CinemaTI22M
             titulo = new string[100];
             genero = new string[100];
 
-            for(i = 0; i <100; i++)
+            for (i = 0; i < 100; i++)
             {
                 codigo[i] = 0;
                 titulo[i] = "";
@@ -74,7 +72,7 @@ namespace CinemaTI22M
             i = 0;
             contador = 0;
 
-            while( leitura.Read())
+            while (leitura.Read())
             {
                 codigo[i] = Convert.ToInt32(leitura["codigo"]);
                 titulo[i] = leitura["titulo"] + "";
@@ -92,7 +90,7 @@ namespace CinemaTI22M
             msg = "";
             for (i = 0; i < contador; i++)
             {
-                msg = $"\nCódigo: {codigo[i]} \nTítulo: {titulo[i]} \nGênero: {genero[i]}\n";
+                msg += $"\nCódigo: {codigo[i]} \nTítulo: {titulo[i]} \nGênero: {genero[i]}\n";
             }//Fim do for
 
             return msg;
@@ -102,11 +100,11 @@ namespace CinemaTI22M
         {
             PreencherVetorFilme();
             msg = "";
-            for(i = 0; i < contador; i++)
+            for (i = 0; i < contador; i++)
             {
                 if (this.codigo[i] == codigo)
                 {
-                    msg = $"\nCódigo: {this.codigo[i]} \nTítulo: {titulo[i]} \nGênero: {genero[i]}\n";
+                    msg = $"\nCódigo: {this.codigo[i]} \nTítulo::  {titulo[i]}  \nGênero:  {genero[i]}\n";
                     return msg;
                 }//Fim do if
             }//Fim do for
@@ -125,6 +123,21 @@ namespace CinemaTI22M
             catch (Exception erro)
             {
                 return $"\nAlgo deu errado!\n\n {erro}";
+            }
+        }//Fim do método
+
+        public string DeletarFilme(int codigo)
+        {
+            try
+            {
+                string query = $"delete from filme where codigo = '{codigo}'";
+                MySqlCommand sql = new MySqlCommand(query, conexao);
+                string resultado = "" + sql.ExecuteNonQuery();
+                return resultado + " dado excluído com sucesso!";
+            }
+            catch (Exception erro)
+            {
+                return $"Algo deu errado\n\n {erro}";
             }
         }//Fim do método
     }//Fim da classe
