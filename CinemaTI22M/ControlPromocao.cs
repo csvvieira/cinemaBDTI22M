@@ -9,6 +9,11 @@ namespace CinemaTI22M
     class ControlPromocao
     {
         private DAOPromocao dao;
+        
+        public ControlPromocao()
+        {
+            dao = new DAOPromocao();
+        }//Fim do construtor
 
         public ControlPromocao(DateTime dataPromocao, DateTime horario)
         {

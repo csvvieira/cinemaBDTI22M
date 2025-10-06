@@ -40,7 +40,7 @@ namespace CinemaTI22M
         {
             try
             {
-                dados = $"('{titulo}','{genero}')";
+                dados = $"('','{titulo}','{genero}')";
                 comando = $"Insert into filme(codigo, titulo, genero) values{dados}";
                 MySqlCommand sql = new MySqlCommand(comando, conexao);
                 string resultado = "" + sql.ExecuteNonQuery();

@@ -20,7 +20,13 @@ namespace CinemaTI22M
 
         public ControlMenu()
         {
-            
+            controleFilme = new ControlFilme();
+            controleSala = new ControlSala();
+            controleSessao = new ControlSessao();
+            controleFidelidade = new ControlFidelidade();
+            controleCliente = new ControlCliente();
+            controlePromocao = new ControlPromocao();
+            controleIngresso = new ControlIngresso();
         }//Fim do construtor
 
         //Métodos GETs e SETs
@@ -218,10 +224,10 @@ namespace CinemaTI22M
                         Console.WriteLine("\nInforme o horário da Sessão: ");
                         DateTime horario = Convert.ToDateTime(Console.ReadLine());
 
-                        Console.WriteLine("\nInforme o código da sala da Sessão: ");
+                        Console.WriteLine("\nInforme o código da sala: ");
                         int codigoSala = Convert.ToInt32(Console.ReadLine());
 
-                        Console.WriteLine("\nInforme o código do filme da Sessão: ");
+                        Console.WriteLine("\nInforme o código do filme: ");
                         int codigoFilme = Convert.ToInt32(Console.ReadLine());
                         //Chamar o filme
                         this.controleSessao = new ControlSessao(horario, codigoSala, codigoFilme);
@@ -368,7 +374,7 @@ namespace CinemaTI22M
                         Console.WriteLine("\nInforme a data da Promoção: ");
                         DateTime dataPromocao = Convert.ToDateTime(Console.ReadLine());
 
-                        Console.WriteLine("\nInforme o Gênero do Promoção: ");
+                        Console.WriteLine("\nInforme o horário do Promoção: ");
                         DateTime horario = Convert.ToDateTime(Console.ReadLine());
                         //Chamar o filme
                         this.controlePromocao = new ControlPromocao(dataPromocao, horario);
@@ -400,7 +406,7 @@ namespace CinemaTI22M
         {
             do
             {
-                Console.WriteLine("\n\nMENU FILME\n\n");
+                Console.WriteLine("\n\nMENU Ingresso\n\n");
                 MenuGeral();
                 switch (ModificarOpcaoGeral)
                 {
@@ -410,22 +416,22 @@ namespace CinemaTI22M
                     case 1:
                         Console.WriteLine("\nCadastrar Ingresso");
                         //Dados
-                        Console.WriteLine("\nInforme o Título do Ingresso: ");
+                        Console.WriteLine("\nInforme a data do Ingresso: ");
                         DateTime dataIngresso = Convert.ToDateTime(Console.ReadLine());
 
-                        Console.WriteLine("\nInforme o Gênero do Ingresso: ");
+                        Console.WriteLine("\nInforme o assento do Ingresso: ");
                         string assento = Console.ReadLine();
 
-                        Console.WriteLine("\nInforme o Título do Ingresso: ");
+                        Console.WriteLine("\nInforme o valor do Ingresso: ");
                         double valor = Convert.ToDouble(Console.ReadLine());
 
-                        Console.WriteLine("\nInforme o Gênero do Ingresso: ");
+                        Console.WriteLine("\nInforme o código do cliente: ");
                         int codigoCliente = Convert.ToInt32(Console.ReadLine());
 
-                        Console.WriteLine("\nInforme o Título do Ingresso: ");
+                        Console.WriteLine("\nInforme o código da sessão: ");
                         int codigoSessao = Convert.ToInt32(Console.ReadLine());
 
-                        Console.WriteLine("\nInforme o Gênero do Ingresso: ");
+                        Console.WriteLine("\nInforme o código da promoção: ");
                         int codigoPromocao = Convert.ToInt32(Console.ReadLine());
                         //Chamar o filme
                         this.controleIngresso = new ControlIngresso(dataIngresso, assento, valor, codigoCliente, codigoSessao, codigoPromocao);

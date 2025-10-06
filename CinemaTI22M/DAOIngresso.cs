@@ -41,7 +41,11 @@ namespace CinemaTI22M
         {
             try
             {
-                dados = $"('{dataIngresso}','{assento}','{valor}','{codigoCliente}','{codigoSessao}','{codigoPromocao}')";
+                MySqlParameter parameter = new MySqlParameter();
+                parameter.ParameterName = "@Date";
+                parameter.MySqlDbType = MySqlDbType.Date;
+                parameter.Value = $"{dataIngresso.Year}-{dataIngresso.Month}-{dataIngresso.Day}";
+                dados = $"('','{parameter.Value}','{assento}','{valor}','{codigoCliente}','{codigoSessao}','{codigoPromocao}')";
                 comando = $"Insert into ingresso(codigo, dataIngresso, assento, valor, codigoCliente, codigoSessao, codigoPromocao) values{dados}";
                 MySqlCommand sql = new MySqlCommand(comando, conexao);
                 string resultado = "" + sql.ExecuteNonQuery();
@@ -130,7 +134,11 @@ namespace CinemaTI22M
         {
             try
             {
-                string query = $"update ingresso set {campo} = '{novoDado}' where codigo = '{codigo}'";
+                MySqlParameter parameter = new MySqlParameter();
+                parameter.ParameterName = "@Date";
+                parameter.MySqlDbType = MySqlDbType.Date;
+                parameter.Value = $"{novoDado.Year}-{novoDado.Month}-{novoDado.Day}";
+                string query = $"update ingresso set {campo} = '{parameter.Value}' where codigo = '{codigo}'";
                 MySqlCommand sql = new MySqlCommand(query, conexao);
                 string resultado = "" + sql.ExecuteNonQuery();
                 return resultado + " dado atualizado com sucesso!";

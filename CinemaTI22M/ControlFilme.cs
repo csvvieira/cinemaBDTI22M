@@ -10,6 +10,11 @@ namespace CinemaTI22M
     {
         private DAOFilme dao;
 
+        public ControlFilme()
+        {
+            dao = new DAOFilme();
+        }//Fim do construtor
+
         public ControlFilme(string titulo, string genero)
         {
             this.dao = new DAOFilme();

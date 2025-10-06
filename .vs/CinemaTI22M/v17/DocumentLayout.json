@@ -1,22 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jecau\\source\\repos\\cinemaBDTI22M\\",
+  "WorkspaceRootPath": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|c:\\users\\jecau\\source\\repos\\cinemabdti22m\\cinemati22m\\controlmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|solutionrelative:cinemati22m\\controlmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|c:\\users\\caio.svieira2\\source\\repos\\cinemabdti22m\\cinemati22m\\controlsessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|solutionrelative:cinemati22m\\controlsessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|c:\\users\\jecau\\source\\repos\\cinemabdti22m\\cinemati22m\\daoingresso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|solutionrelative:cinemati22m\\daoingresso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|c:\\users\\caio.svieira2\\source\\repos\\cinemabdti22m\\cinemati22m\\controlsala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|solutionrelative:cinemati22m\\controlsala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|c:\\users\\jecau\\source\\repos\\cinemabdti22m\\cinemati22m\\controlingresso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|c:\\users\\caio.svieira2\\source\\repos\\cinemabdti22m\\cinemati22m\\controlpromocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|solutionrelative:cinemati22m\\controlpromocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|c:\\users\\caio.svieira2\\source\\repos\\cinemabdti22m\\cinemati22m\\controlingresso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|solutionrelative:cinemati22m\\controlingresso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|C:\\Users\\jecau\\source\\repos\\cinemaBDTI22M\\cinemati22m\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|solutionrelative:cinemati22m\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|c:\\users\\caio.svieira2\\source\\repos\\cinemabdti22m\\cinemati22m\\controlfilme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|solutionrelative:cinemati22m\\controlfilme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|c:\\users\\caio.svieira2\\source\\repos\\cinemabdti22m\\cinemati22m\\controlfidelidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|solutionrelative:cinemati22m\\controlfidelidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|c:\\users\\caio.svieira2\\source\\repos\\cinemabdti22m\\cinemati22m\\controlcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|solutionrelative:cinemati22m\\controlcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|c:\\users\\caio.svieira2\\source\\repos\\cinemabdti22m\\cinemati22m\\controlmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF93F2D-6D14-430E-948E-B6BB337CC65D}|CinemaTI22M\\CinemaTI22M.csproj|solutionrelative:cinemati22m\\controlmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +42,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ControlSessao.cs",
+              "DocumentMoniker": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlSessao.cs",
+              "RelativeDocumentMoniker": "CinemaTI22M\\ControlSessao.cs",
+              "ToolTip": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlSessao.cs",
+              "RelativeToolTip": "CinemaTI22M\\ControlSessao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T14:12:27.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ControlSala.cs",
+              "DocumentMoniker": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlSala.cs",
+              "RelativeDocumentMoniker": "CinemaTI22M\\ControlSala.cs",
+              "ToolTip": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlSala.cs",
+              "RelativeToolTip": "CinemaTI22M\\ControlSala.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T14:12:26.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ControlPromocao.cs",
+              "DocumentMoniker": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlPromocao.cs",
+              "RelativeDocumentMoniker": "CinemaTI22M\\ControlPromocao.cs",
+              "ToolTip": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlPromocao.cs",
+              "RelativeToolTip": "CinemaTI22M\\ControlPromocao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T14:12:26.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ControlIngresso.cs",
+              "DocumentMoniker": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlIngresso.cs",
+              "RelativeDocumentMoniker": "CinemaTI22M\\ControlIngresso.cs",
+              "ToolTip": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlIngresso.cs",
+              "RelativeToolTip": "CinemaTI22M\\ControlIngresso.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAowDwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T14:07:39.928Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -38,54 +106,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ControlMenu.cs",
-              "DocumentMoniker": "C:\\Users\\jecau\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlMenu.cs",
-              "RelativeDocumentMoniker": "CinemaTI22M\\ControlMenu.cs",
-              "ToolTip": "C:\\Users\\jecau\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlMenu.cs",
-              "RelativeToolTip": "CinemaTI22M\\ControlMenu.cs",
-              "ViewState": "AgIAAEMBAAAAAAAAAAArwFABAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T15:56:17.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DAOIngresso.cs",
-              "DocumentMoniker": "C:\\Users\\jecau\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\DAOIngresso.cs",
-              "RelativeDocumentMoniker": "CinemaTI22M\\DAOIngresso.cs",
-              "ToolTip": "C:\\Users\\jecau\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\DAOIngresso.cs",
-              "RelativeToolTip": "CinemaTI22M\\DAOIngresso.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAUwDMAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T15:54:31.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ControlIngresso.cs",
-              "DocumentMoniker": "C:\\Users\\jecau\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlIngresso.cs",
-              "RelativeDocumentMoniker": "CinemaTI22M\\ControlIngresso.cs",
-              "ToolTip": "C:\\Users\\jecau\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlIngresso.cs",
-              "RelativeToolTip": "CinemaTI22M\\ControlIngresso.cs",
+              "DocumentIndex": 4,
+              "Title": "ControlFilme.cs",
+              "DocumentMoniker": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlFilme.cs",
+              "RelativeDocumentMoniker": "CinemaTI22M\\ControlFilme.cs",
+              "ToolTip": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlFilme.cs",
+              "RelativeToolTip": "CinemaTI22M\\ControlFilme.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T15:54:26.035Z",
+              "WhenOpened": "2025-10-06T14:12:24.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jecau\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\Program.cs",
-              "RelativeDocumentMoniker": "CinemaTI22M\\Program.cs",
-              "ToolTip": "C:\\Users\\jecau\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\Program.cs",
-              "RelativeToolTip": "CinemaTI22M\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ControlFidelidade.cs",
+              "DocumentMoniker": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlFidelidade.cs",
+              "RelativeDocumentMoniker": "CinemaTI22M\\ControlFidelidade.cs",
+              "ToolTip": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlFidelidade.cs",
+              "RelativeToolTip": "CinemaTI22M\\ControlFidelidade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T14:29:50.704Z",
+              "WhenOpened": "2025-10-06T14:12:23.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ControlCliente.cs",
+              "DocumentMoniker": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlCliente.cs",
+              "RelativeDocumentMoniker": "CinemaTI22M\\ControlCliente.cs",
+              "ToolTip": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlCliente.cs",
+              "RelativeToolTip": "CinemaTI22M\\ControlCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T14:12:22.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ControlMenu.cs",
+              "DocumentMoniker": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlMenu.cs",
+              "RelativeDocumentMoniker": "CinemaTI22M\\ControlMenu.cs",
+              "ToolTip": "C:\\Users\\caio.svieira2\\source\\repos\\cinemaBDTI22M\\CinemaTI22M\\ControlMenu.cs",
+              "RelativeToolTip": "CinemaTI22M\\ControlMenu.cs",
+              "ViewState": "AgIAAJYBAAAAAAAAAAAUwLEBAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T15:56:17.214Z",
               "EditorCaption": ""
             }
           ]

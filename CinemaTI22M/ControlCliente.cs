@@ -10,6 +10,11 @@ namespace CinemaTI22M
     {
         private DAOCliente dao;
 
+        public ControlCliente()
+        {
+            dao = new DAOCliente();
+        }//Fim do construtor
+
         public ControlCliente(string nome, long CPF, string email, DateTime dtNascimento, string telefone, int codigoFidelidade)
         {
             this.dao = new DAOCliente();

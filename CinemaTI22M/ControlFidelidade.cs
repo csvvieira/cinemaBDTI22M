@@ -10,6 +10,11 @@ namespace CinemaTI22M
     {
         private DAOFidelidade dao;
 
+        public ControlFidelidade()
+        {
+            dao = new DAOFidelidade();
+        }//Fim do construtor
+
         public ControlFidelidade(int quantidadeDeCompras, int pontos)
         {
             this.dao = new DAOFidelidade();

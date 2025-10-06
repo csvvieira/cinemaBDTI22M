@@ -10,6 +10,11 @@ namespace CinemaTI22M
     {
         private DAOSessao dao;
 
+        public ControlSessao()
+        {
+            dao = new DAOSessao();
+        }//Fim do construtor
+
         public ControlSessao(DateTime horarioSessao, int codigoSala, int codigoFilme)
         {
             this.dao = new DAOSessao();
@@ -36,7 +41,7 @@ namespace CinemaTI22M
             Console.WriteLine("Escolha o que deseja atualizar: " +
                               "\n1. Horário da Sessão" +
                               "\n2. Codigo da Sala" +
-                              "\n3.Codigo do Filme");
+                              "\n3. Codigo do Filme");
             int escolha = Convert.ToInt32(Console.ReadLine());
             switch (escolha)
             {
@@ -45,8 +50,8 @@ namespace CinemaTI22M
                     Console.WriteLine("Informe o código onde vai atualizar");
                     int codigo = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Informe o novo horário: ");
-                    DateTime horarioSessao = Convert.ToDateTime(Console.ReadLine());
-                    Console.WriteLine(this.dao.AtualizarSessao(codigo, "horarioSessao", horarioSessao));
+                    DateTime horario = Convert.ToDateTime(Console.ReadLine());
+                    Console.WriteLine(this.dao.AtualizarSessao(codigo, "horario", horario));
                     break;
                 case 2:
                     Console.WriteLine("\nAtualizar Código da Sala");

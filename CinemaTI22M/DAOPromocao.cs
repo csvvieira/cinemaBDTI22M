@@ -40,7 +40,11 @@ namespace CinemaTI22M
         {
             try
             {
-                dados = $"('{dataPromocao}','{horario}')";
+                MySqlParameter parameter = new MySqlParameter();
+                parameter.ParameterName = "@Date";
+                parameter.MySqlDbType = MySqlDbType.Date;
+                parameter.Value = $"{horario.Year}-{horario.Month}-{horario.Day} {horario.Hour}:{horario.Minute}:{horario.Second}";
+                dados = $"('','{parameter.Value}','{parameter.Value}')";
                 comando = $"Insert into promocao(codigo, dataPromocao, horario) values{dados}";
                 MySqlCommand sql = new MySqlCommand(comando, conexao);
                 string resultado = "" + sql.ExecuteNonQuery();
@@ -115,7 +119,12 @@ namespace CinemaTI22M
         {
             try
             {
-                string query = $"update promocao set {campo} = '{novoDado}' where codigo = '{codigo}'";
+                MySqlParameter parameter = new MySqlParameter();
+                parameter.ParameterName = "@Date";
+                parameter.MySqlDbType = MySqlDbType.Date;
+                parameter.Value = $"{novoDado.Year}-{novoDado.Month}-{novoDado.Day} {novoDado.Hour}:{novoDado.Minute}:{novoDado.Second}";
+                dados = $"('','{parameter.Value}','{parameter.Value}')";
+                string query = $"update promocao set {campo} = '{parameter.Value}' where codigo = '{codigo}'";
                 MySqlCommand sql = new MySqlCommand(query, conexao);
                 string resultado = "" + sql.ExecuteNonQuery();
                 return resultado + " dado atualizado com sucesso!";

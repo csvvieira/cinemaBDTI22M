@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Pipes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace CinemaTI22M
         public string dados;
         public string comando;
         public int[] codigo;
-        public DateTime[] horarioSessao;
+        public DateTime[] horario;
         public int[] codigoSala;
         public int[] codigoFilme;
         public int i;
@@ -37,12 +38,16 @@ namespace CinemaTI22M
             }//Fim do try_catch
         }//Fim do construtor
 
-        public void Inserir(DateTime horarioSessao, int codigoSala, int codigoFilme)
+        public void Inserir(DateTime horario, int codigoSala, int codigoFilme)
         {
             try
             {
-                dados = $"('{horarioSessao}','{codigoSala}','{codigoFilme}')";
-                comando = $"Insert into sessao(codigo, horarioSessao, codigoSala, codigoFilme) values{dados}";
+                MySqlParameter parameter = new MySqlParameter();
+                parameter.ParameterName = "@Date";
+                parameter.MySqlDbType = MySqlDbType.Date;
+                parameter.Value = $"{horario.Year}-{horario.Month}-{horario.Day} {horario.Hour}:{horario.Minute}:{horario.Second}";
+                dados = $"('','{parameter.Value}','{codigoSala}','{codigoFilme}')";
+                comando = $"Insert into sessao(codigo, horario, codigoSala, codigoFilme) values{dados}";
                 MySqlCommand sql = new MySqlCommand(comando, conexao);
                 string resultado = "" + sql.ExecuteNonQuery();
                 Console.WriteLine($"Inserido com sucesso! {resultado}");
@@ -57,14 +62,14 @@ namespace CinemaTI22M
         {
             string query = "select * from sessao";
             codigo = new int[100];
-            horarioSessao = new DateTime[100];
+            horario = new DateTime[100];
             codigoSala = new int[100];
             codigoFilme = new int[100];
 
             for (i = 0; i < 100; i++)
             {
                 codigo[i] = 0;
-                horarioSessao[i] = new DateTime();
+                horario[i] = new DateTime();
                 codigoSala[i] = 0;
                 codigoFilme[i] = 0;
             }//Fim do for
@@ -78,7 +83,7 @@ namespace CinemaTI22M
             while (leitura.Read())
             {
                 codigo[i] = Convert.ToInt32(leitura["codigo"]);
-                horarioSessao[i] = Convert.ToDateTime(leitura["horarioSessao"]);
+                horario[i] = Convert.ToDateTime(leitura["horario"]);
                 codigoSala[i] = Convert.ToInt32(leitura["codigoSala"]);
                 codigoFilme[i] = Convert.ToInt32(leitura["codigoFilme"]);
                 i++;
@@ -94,7 +99,7 @@ namespace CinemaTI22M
             msg = "";
             for (i = 0; i < contador; i++)
             {
-                msg += $"\nCódigo: {codigo[i]} \nHorário da Sessão: {horarioSessao[i]} \nCódigo da Sala: {codigoSala[i]} \nCódigo do Filme : {codigoFilme[i]}\n";
+                msg += $"\nCódigo: {codigo[i]} \nHorário da Sessão: {horario[i]} \nCódigo da Sala: {codigoSala[i]} \nCódigo do Filme : {codigoFilme[i]}\n";
             }//Fim do for
 
             return msg;
@@ -108,7 +113,7 @@ namespace CinemaTI22M
             {
                 if (this.codigo[i] == codigo)
                 {
-                    msg = $"\nCódigo: {this.codigo[i]} \nHorário da Sessão:  {horarioSessao[i]}  \nCódigo da Sala:  {codigoSala[i]} \nCódigo do Filme: {codigoFilme[i]}\n";
+                    msg = $"\nCódigo: {this.codigo[i]} \nHorário da Sessão:  {horario[i]}  \nCódigo da Sala:  {codigoSala[i]} \nCódigo do Filme: {codigoFilme[i]}\n";
                     return msg;
                 }//Fim do if
             }//Fim do for
@@ -119,7 +124,11 @@ namespace CinemaTI22M
         {
             try
             {
-                string query = $"update sessao set {campo} = '{novoDado}' where codigo = '{codigo}'";
+                MySqlParameter parameter = new MySqlParameter();
+                parameter.ParameterName = "@Date";
+                parameter.MySqlDbType = MySqlDbType.Date;
+                parameter.Value = $"{novoDado.Year}-{novoDado.Month}-{novoDado.Day} {novoDado.Hour}:{novoDado.Minute}:{novoDado.Second}";
+                string query = $"update sessao set {campo} = '{parameter.Value}' where codigo = '{codigo}'";
                 MySqlCommand sql = new MySqlCommand(query, conexao);
                 string resultado = "" + sql.ExecuteNonQuery();
                 return resultado + " dado atualizado com sucesso!";

@@ -10,6 +10,11 @@ namespace CinemaTI22M
     {
         private DAOIngresso dao;
 
+        public ControlIngresso()
+        {
+            dao = new DAOIngresso();
+        }//Fim do construtor
+
         public ControlIngresso(DateTime dataIngresso, string assento, double valor, int codigoCliente, int codigoSessao, int codigoPromocao)
         {
             this.dao = new DAOIngresso();

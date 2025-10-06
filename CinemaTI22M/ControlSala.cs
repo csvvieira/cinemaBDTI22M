@@ -10,6 +10,11 @@ namespace CinemaTI22M
     {
         private DAOSala dao;
 
+        public ControlSala()
+        {
+            dao = new DAOSala();
+        }//Fim do construtor
+
         public ControlSala(int capacidade, string recursos)
         {
             this.dao = new DAOSala();

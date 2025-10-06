@@ -41,7 +41,7 @@ namespace CinemaTI22M
         {
             try
             {
-                dados = $"('{quantidadeDeCompras}','{pontos}')";
+                dados = $"('','{quantidadeDeCompras}','{pontos}')";
                 comando = $"Insert into cartaoFidelidade(codigo, quantidadeDeCompras, pontos) values{dados}";
                 MySqlCommand sql = new MySqlCommand(comando, conexao);
                 string resultado = "" + sql.ExecuteNonQuery();
